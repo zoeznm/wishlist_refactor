@@ -27,24 +27,24 @@ const Home: React.FC = () => {
       </div>
       <div className={styles['card-container']}>
         <div className={styles.card}>
-          <Image src="/img/frontcard1.png" alt="Front Card" className={styles.card1} width={200} height={300} />
-          <Image src="/img/backcard1.png" alt="Back Card" className={styles.card2} width={200} height={300} />
+          <Image src="/img/frontcard1.png" alt="Front Card" className={styles.card1}/>
+          <Image src="/img/backcard1.png" alt="Back Card" className={styles.card2}/>
         </div>
         <div className={styles.card_2}>
-          <Image src="/img/frontcard2.png" alt="Front Card" className={styles.card3} width={200} height={300} />
-          <Image src="/img/backcard2.png" alt="Back Card" className={styles.card4} width={200} height={300} />
+          <Image src="/img/frontcard2.png" alt="Front Card" className={styles.card3}/>
+          <Image src="/img/backcard2.png" alt="Back Card" className={styles.card4}/>
         </div>
         <div className={styles.card_3}>
-          <Image src="/img/frontcard3.png" alt="Front Card" className={styles.card5} width={200} height={300} />
-          <Image src="/img/backcard3.png" alt="Back Card" className={styles.card6} width={200} height={300} />
+          <Image src="/img/frontcard3.png" alt="Front Card" className={styles.card5}/>
+          <Image src="/img/backcard3.png" alt="Back Card" className={styles.card6}/>
         </div>
         <div className={styles.card_4}>
-          <Image src="/img/frontcard4.png" alt="Front Card" className={styles.card7} width={200} height={300} />
-          <Image src="/img/backcard4.png" alt="Back Card" className={styles.card8} width={200} height={300} />
+          <Image src="/img/frontcard4.png" alt="Front Card" className={styles.card7}/>
+          <Image src="/img/backcard4.png" alt="Back Card" className={styles.card8}/>
         </div>
         <div className={styles.card_5}>
-          <Image src="/img/frontcard5.png" alt="Front Card" className={styles.card9} width={200} height={300} />
-          <Image src="/img/backcard5.png" alt="Back Card" className={styles.card10} width={200} height={300} />
+          <Image src="/img/frontcard5.png" alt="Front Card" className={styles.card9}/>
+          <Image src="/img/backcard5.png" alt="Back Card" className={styles.card10}/>
         </div>
       </div>
       <div className={styles['flame-wrapper']}>

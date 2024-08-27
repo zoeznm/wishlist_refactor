@@ -1,0 +1,3547 @@
+/* fonts 저장소 */
+@import url("https://fonts.googleapis.com/css2?family=Jersey+15&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jersey+15&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  -tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+
+/* @keyframes flicker {
+  0% {
+    transform: rotate(-4deg);
+  }
+  20% {
+    transform: rotate(-5deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  90% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}  */
+
+.card1,
+.card3,
+.card5,
+.card7,
+.card9 {
+  transform: rotateY(0deg);
+}
+.card2,
+.card4,
+.card6,
+.card8,
+.card10 {
+  transform: rotateY(180deg);
+}
+.flipped {
+  transform: rotateY(180deg);
+}
+.flipped1 {
+  width: 18vw;
+  transform: rotateY(180deg);
+}
+.flipped2 {
+  width: 18vw;
+  transform: rotateY(180deg);
+}
+.flipped3 {
+  width: 18vw;
+  transform: rotateY(180deg);
+}
+.flipped4 {
+  width: 18vw;
+  transform: rotateY(180deg);
+}
+.flipped5 {
+  width: 18vw;
+  transform: rotateY(180deg);
+}
+/* 미디어 쿼리: 480px 이하의 화면에서 스타일 조정 */
+@media screen and (max-width: 480px) {
+  .section {
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    min-height: 100vh;
+  }
+  .img {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    top: 8%;
+  }
+  .img1 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    bottom: 8%;
+  }
+  .img2 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    top: 8%;
+    left: 3%;
+  }
+  .img3 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    bottom: 8%;
+    right: 3%;
+  }
+  .img4 {
+    position: fixed;
+    width: 9%;
+    height: auto;
+    top: 7.3%;
+    right: 2.5%;
+  }
+  .img5 {
+    position: fixed;
+    width: 9%;
+    height: auto;
+    bottom: 7.3%;
+    left: 2.5%;
+  }
+  .img6 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    left: 3%;
+    top: 44%;
+  }
+  .img7 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    right: 3%;
+    top: 44%;
+  }
+  .long-line1 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    top: 14%;
+    left: 18%;
+  }
+  .long-line2 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    top: 14%;
+    right: 18%;
+  }
+  .long-line3 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    bottom: 14%;
+    right: 18%;
+  }
+  .long-line4 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    bottom: 14%;
+    left: 18%;
+  }
+  .short-line1 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 24%;
+    left: 6.9%;
+  }
+  .short-line2 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 62%;
+    left: 6.9%;
+  }
+  .short-line3 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 62%;
+    right: 6.9%;
+  }
+  .short-line4 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 24%;
+    right: 6.9%;
+  }
+  .card-container {
+    position: fixed;
+    top: 24%;
+    width: 68vw;
+    height: 52vh;
+  }
+  .card {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 41%;
+    z-index: 3;
+  }
+  .card1,
+  .card2 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card1 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card2 {
+    z-index: 3;
+    transform: rotateY(180deg);
+  }
+  .card_2 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 28%;
+    z-index: 2;
+    /* transform: rotate(-5deg); */
+  }
+  .card3,
+  .card4 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card3 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card4 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_3 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 28%;
+    z-index: 2;
+  }
+  .card5,
+  .card6 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card5 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card6 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_4 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 16%;
+    z-index: 1;
+    /* transform: rotate(-5deg); */
+  }
+  .card7,
+  .card8 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card7 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card8 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_5 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 16%;
+    z-index: 1;
+    /* transform: rotate(-5deg); */
+  }
+  .card9,
+  .card10 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card9 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card10 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  /* fire */
+  .red {
+    width: 6.2vw;
+    height: 10vh;
+    background: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+  }
+  .orange {
+    left: 1vw;
+    width: 4.3vw;
+    height: 7vh;
+    background: orange;
+    box-shadow: 0px 0px 12px 6px orange;
+  }
+
+  .gold {
+    left: 1.5vw;
+    width: 3.4vw;
+    height: 5.5vh;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+  }
+
+  .white {
+    left: 1.9vw;
+    width: 2.5vw;
+    height: 4vh;
+    background: lightyellow;
+    box-shadow: 0px 0px 9px 4px lightyellow;
+  }
+
+  .blue {
+    left: 2.5vw;
+    width: 1.2vw;
+    height: 3vh;
+    background: darkblue;
+    box-shadow: 0px 0px 15px 10px darkblue;
+  }
+
+  .black {
+    left: 2vw;
+    width: 3vw;
+    height: 4vh;
+    bottom: -3.5vw;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+  }
+  .base {
+    border-radius: 50%;
+    position: absolute;
+  }
+  .flame-wrapper {
+    position: fixed;
+    animation: flicker 3ms ease-in infinite;
+    top: 55%;
+    left: 3.8%;
+  }
+  .flame {
+    bottom: 0;
+    position: absolute;
+    border-radius: 50% 0% 50% 50%;
+    transform: rotate(-45deg);
+  }
+  .red1 {
+    width: 6.2vw;
+    height: 10vh;
+    background: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+  }
+  .orange1 {
+    left: 1vw;
+    width: 4.3vw;
+    height: 7vh;
+    background: orange;
+    box-shadow: 0px 0px 12px 6px orange;
+  }
+
+  .gold1 {
+    left: 1.5vw;
+    width: 3.4vw;
+    height: 5.5vh;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+  }
+
+  .white1 {
+    left: 1.9vw;
+    width: 2.5vw;
+    height: 4vh;
+    background: lightyellow;
+    box-shadow: 0px 0px 9px 4px lightyellow;
+  }
+
+  .blue1 {
+    left: 2.5vw;
+    width: 1.2vw;
+    height: 3vh;
+    background: darkblue;
+    box-shadow: 0px 0px 15px 10px darkblue;
+  }
+
+  .black1 {
+    left: 2vw;
+    width: 3vw;
+    height: 4vh;
+    bottom: -3.5vw;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+  }
+  .base {
+    border-radius: 50%;
+    position: absolute;
+  }
+  .flame-wrapper1 {
+    position: fixed;
+    animation: flicker 3ms ease-in infinite;
+    top: 55%;
+    right: 10.1%;
+  }
+}
+/* 미디어 쿼리: 600px 이하의 화면에서 스타일 조정 */
+@media screen and (max-width: 600px) {
+  .section {
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    min-height: 100vh;
+  }
+  .img {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    top: 8%;
+  }
+  .img1 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    bottom: 8%;
+  }
+  .img2 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    top: 8%;
+    left: 3%;
+  }
+  .img3 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    bottom: 8%;
+    right: 3%;
+  }
+  .img4 {
+    position: fixed;
+    width: 9%;
+    height: auto;
+    top: 7.3%;
+    right: 2.5%;
+  }
+  .img5 {
+    position: fixed;
+    width: 9%;
+    height: auto;
+    bottom: 7.3%;
+    left: 2.5%;
+  }
+  .img6 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    left: 3%;
+    top: 44%;
+  }
+  .img7 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    right: 3%;
+    top: 44%;
+  }
+  .long-line1 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    top: 14%;
+    left: 18%;
+  }
+  .long-line2 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    top: 14%;
+    right: 18%;
+  }
+  .long-line3 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    bottom: 14%;
+    right: 18%;
+  }
+  .long-line4 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    bottom: 14%;
+    left: 18%;
+  }
+  .short-line1 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 24%;
+    left: 6.9%;
+  }
+  .short-line2 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 62%;
+    left: 6.9%;
+  }
+  .short-line3 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 62%;
+    right: 6.9%;
+  }
+  .short-line4 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 24%;
+    right: 6.9%;
+  }
+  .card-container {
+    position: fixed;
+    top: 24%;
+    width: 68vw;
+    height: 52vh;
+  }
+  .card {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 41%;
+    z-index: 3;
+  }
+  .card1,
+  .card2 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card1 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card2 {
+    z-index: 3;
+    transform: rotateY(180deg);
+  }
+  .card_2 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 28%;
+    z-index: 2;
+    /* transform: rotate(-5deg); */
+  }
+  .card3,
+  .card4 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card3 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card4 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_3 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 28%;
+    z-index: 2;
+  }
+  .card5,
+  .card6 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card5 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card6 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_4 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 16%;
+    z-index: 1;
+    /* transform: rotate(-5deg); */
+  }
+  .card7,
+  .card8 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card7 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card8 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_5 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 16%;
+    z-index: 1;
+    /* transform: rotate(-5deg); */
+  }
+  .card9,
+  .card10 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card9 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card10 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  /* fire */
+  .red {
+    width: 6.2vw;
+    height: 10vh;
+    background: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+  }
+  .orange {
+    left: 1vw;
+    width: 4.3vw;
+    height: 7vh;
+    background: orange;
+    box-shadow: 0px 0px 12px 6px orange;
+  }
+
+  .gold {
+    left: 1.5vw;
+    width: 3.4vw;
+    height: 5.5vh;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+  }
+
+  .white {
+    left: 1.9vw;
+    width: 2.5vw;
+    height: 4vh;
+    background: lightyellow;
+    box-shadow: 0px 0px 9px 4px lightyellow;
+  }
+
+  .blue {
+    left: 2.5vw;
+    width: 1.2vw;
+    height: 3vh;
+    background: darkblue;
+    box-shadow: 0px 0px 15px 10px darkblue;
+  }
+
+  .black {
+    left: 2vw;
+    width: 3vw;
+    height: 4vh;
+    bottom: -3.5vw;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+  }
+  .base {
+    border-radius: 50%;
+    position: absolute;
+  }
+  .flame-wrapper {
+    position: fixed;
+    animation: flicker 3ms ease-in infinite;
+    top: 55%;
+    left: 3.8%;
+  }
+  .flame {
+    bottom: 0;
+    position: absolute;
+    border-radius: 50% 0% 50% 50%;
+    transform: rotate(-45deg);
+  }
+  .red1 {
+    width: 6.2vw;
+    height: 10vh;
+    background: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+  }
+  .orange1 {
+    left: 1vw;
+    width: 4.3vw;
+    height: 7vh;
+    background: orange;
+    box-shadow: 0px 0px 12px 6px orange;
+  }
+
+  .gold1 {
+    left: 1.5vw;
+    width: 3.4vw;
+    height: 5.5vh;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+  }
+
+  .white1 {
+    left: 1.9vw;
+    width: 2.5vw;
+    height: 4vh;
+    background: lightyellow;
+    box-shadow: 0px 0px 9px 4px lightyellow;
+  }
+
+  .blue1 {
+    left: 2.5vw;
+    width: 1.2vw;
+    height: 3vh;
+    background: darkblue;
+    box-shadow: 0px 0px 15px 10px darkblue;
+  }
+
+  .black1 {
+    left: 2vw;
+    width: 3vw;
+    height: 4vh;
+    bottom: -3.5vw;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+  }
+  .base {
+    border-radius: 50%;
+    position: absolute;
+  }
+  .flame-wrapper1 {
+    position: fixed;
+    animation: flicker 3ms ease-in infinite;
+    top: 55%;
+    right: 10.1%;
+  }
+}
+/* 미디어 쿼리: 600px 이상 768px 이하의 화면에서 스타일 조정 */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .section {
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    min-height: 100vh;
+  }
+  .img {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    top: 8%;
+  }
+  .img1 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    bottom: 8%;
+  }
+  .img2 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    top: 8%;
+    left: 3%;
+  }
+  .img3 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    bottom: 8%;
+    right: 3%;
+  }
+  .img4 {
+    position: fixed;
+    width: 9%;
+    height: auto;
+    top: 7.3%;
+    right: 2.5%;
+  }
+  .img5 {
+    position: fixed;
+    width: 9%;
+    height: auto;
+    bottom: 7.3%;
+    left: 2.5%;
+  }
+  .img6 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    left: 3%;
+    top: 44%;
+  }
+  .img7 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    right: 3%;
+    top: 44%;
+  }
+  .long-line1 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    top: 14%;
+    left: 18%;
+  }
+  .long-line2 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    top: 14%;
+    right: 18%;
+  }
+  .long-line3 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    bottom: 14%;
+    right: 18%;
+  }
+  .long-line4 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    bottom: 14%;
+    left: 18%;
+  }
+  .short-line1 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 24%;
+    left: 6.9%;
+  }
+  .short-line2 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 62%;
+    left: 6.9%;
+  }
+  .short-line3 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 62%;
+    right: 6.9%;
+  }
+  .short-line4 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 24%;
+    right: 6.9%;
+  }
+  .card-container {
+    position: fixed;
+    top: 24%;
+    width: 68vw;
+    height: 52vh;
+  }
+  .card {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 41%;
+    z-index: 3;
+  }
+  .card1,
+  .card2 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card1 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card2 {
+    z-index: 3;
+    transform: rotateY(180deg);
+  }
+  .card_2 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 28%;
+    z-index: 2;
+    /* transform: rotate(-5deg); */
+  }
+  .card3,
+  .card4 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card3 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card4 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_3 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 28%;
+    z-index: 2;
+  }
+  .card5,
+  .card6 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card5 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card6 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_4 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 16%;
+    z-index: 1;
+    /* transform: rotate(-5deg); */
+  }
+  .card7,
+  .card8 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card7 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card8 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_5 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 16%;
+    z-index: 1;
+    /* transform: rotate(-5deg); */
+  }
+  .card9,
+  .card10 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card9 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card10 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  /* fire */
+  .red {
+    width: 6.2vw;
+    height: 10vh;
+    background: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+  }
+  .orange {
+    left: 1vw;
+    width: 4.3vw;
+    height: 7vh;
+    background: orange;
+    box-shadow: 0px 0px 12px 6px orange;
+  }
+
+  .gold {
+    left: 1.5vw;
+    width: 3.4vw;
+    height: 5.5vh;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+  }
+
+  .white {
+    left: 1.9vw;
+    width: 2.5vw;
+    height: 4vh;
+    background: lightyellow;
+    box-shadow: 0px 0px 9px 4px lightyellow;
+  }
+
+  .blue {
+    left: 2.5vw;
+    width: 1.2vw;
+    height: 3vh;
+    background: darkblue;
+    box-shadow: 0px 0px 15px 10px darkblue;
+  }
+
+  .black {
+    left: 2vw;
+    width: 3vw;
+    height: 4vh;
+    bottom: -3.5vw;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+  }
+  .base {
+    border-radius: 50%;
+    position: absolute;
+  }
+  .flame-wrapper {
+    position: fixed;
+    animation: flicker 3ms ease-in infinite;
+    top: 55%;
+    left: 3.8%;
+  }
+  .flame {
+    bottom: 0;
+    position: absolute;
+    border-radius: 50% 0% 50% 50%;
+    transform: rotate(-45deg);
+  }
+  .red1 {
+    width: 6.2vw;
+    height: 10vh;
+    background: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+  }
+  .orange1 {
+    left: 1vw;
+    width: 4.3vw;
+    height: 7vh;
+    background: orange;
+    box-shadow: 0px 0px 12px 6px orange;
+  }
+
+  .gold1 {
+    left: 1.5vw;
+    width: 3.4vw;
+    height: 5.5vh;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+  }
+
+  .white1 {
+    left: 1.9vw;
+    width: 2.5vw;
+    height: 4vh;
+    background: lightyellow;
+    box-shadow: 0px 0px 9px 4px lightyellow;
+  }
+
+  .blue1 {
+    left: 2.5vw;
+    width: 1.2vw;
+    height: 3vh;
+    background: darkblue;
+    box-shadow: 0px 0px 15px 10px darkblue;
+  }
+
+  .black1 {
+    left: 2vw;
+    width: 3vw;
+    height: 4vh;
+    bottom: -3.5vw;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+  }
+  .base {
+    border-radius: 50%;
+    position: absolute;
+  }
+  .flame-wrapper1 {
+    position: fixed;
+    animation: flicker 3ms ease-in infinite;
+    top: 55%;
+    right: 10.1%;
+  }
+}
+/* 미디어 쿼리: 768px 이상 1280px 이하의 화면에서 스타일 조정 */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .section {
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    min-height: 100vh;
+  }
+  .img {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    top: 8%;
+  }
+  .img1 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    bottom: 8%;
+  }
+  .img2 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    top: 8%;
+    left: 3%;
+  }
+  .img3 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    bottom: 8%;
+    right: 3%;
+  }
+  .img4 {
+    position: fixed;
+    width: 9%;
+    height: auto;
+    top: 7.3%;
+    right: 2.5%;
+  }
+  .img5 {
+    position: fixed;
+    width: 9%;
+    height: auto;
+    bottom: 7.3%;
+    left: 2.5%;
+  }
+  .img6 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    left: 3%;
+    top: 44%;
+  }
+  .img7 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    right: 3%;
+    top: 44%;
+  }
+  .long-line1 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    top: 14%;
+    left: 18%;
+  }
+  .long-line2 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    top: 14%;
+    right: 18%;
+  }
+  .long-line3 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    bottom: 14%;
+    right: 18%;
+  }
+  .long-line4 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    bottom: 14%;
+    left: 18%;
+  }
+  .short-line1 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 24%;
+    left: 6.9%;
+  }
+  .short-line2 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 62%;
+    left: 6.9%;
+  }
+  .short-line3 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 62%;
+    right: 6.9%;
+  }
+  .short-line4 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 24%;
+    right: 6.9%;
+  }
+  .card-container {
+    position: fixed;
+    top: 24%;
+    width: 68vw;
+    height: 52vh;
+  }
+  .card {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 41%;
+    z-index: 3;
+  }
+  .card1,
+  .card2 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card1 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card2 {
+    z-index: 3;
+    transform: rotateY(180deg);
+  }
+  .card_2 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 28%;
+    z-index: 2;
+    /* transform: rotate(-5deg); */
+  }
+  .card3,
+  .card4 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card3 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card4 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_3 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 28%;
+    z-index: 2;
+  }
+  .card5,
+  .card6 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card5 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card6 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_4 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 16%;
+    z-index: 1;
+    /* transform: rotate(-5deg); */
+  }
+  .card7,
+  .card8 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card7 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card8 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_5 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 16%;
+    z-index: 1;
+    /* transform: rotate(-5deg); */
+  }
+  .card9,
+  .card10 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card9 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card10 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  /* fire */
+  .red {
+    width: 6.2vw;
+    height: 10vh;
+    background: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+  }
+  .orange {
+    left: 1vw;
+    width: 4.3vw;
+    height: 7vh;
+    background: orange;
+    box-shadow: 0px 0px 12px 6px orange;
+  }
+
+  .gold {
+    left: 1.5vw;
+    width: 3.4vw;
+    height: 5.5vh;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+  }
+
+  .white {
+    left: 1.9vw;
+    width: 2.5vw;
+    height: 4vh;
+    background: lightyellow;
+    box-shadow: 0px 0px 9px 4px lightyellow;
+  }
+
+  .blue {
+    left: 2.5vw;
+    width: 1.2vw;
+    height: 3vh;
+    background: darkblue;
+    box-shadow: 0px 0px 15px 10px darkblue;
+  }
+
+  .black {
+    left: 2vw;
+    width: 3vw;
+    height: 4vh;
+    bottom: -3.5vw;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+  }
+  .base {
+    border-radius: 50%;
+    position: absolute;
+  }
+  .flame-wrapper {
+    position: fixed;
+    animation: flicker 3ms ease-in infinite;
+    top: 55%;
+    left: 3.8%;
+  }
+  .flame {
+    bottom: 0;
+    position: absolute;
+    border-radius: 50% 0% 50% 50%;
+    transform: rotate(-45deg);
+  }
+  .red1 {
+    width: 6.2vw;
+    height: 10vh;
+    background: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+  }
+  .orange1 {
+    left: 1vw;
+    width: 4.3vw;
+    height: 7vh;
+    background: orange;
+    box-shadow: 0px 0px 12px 6px orange;
+  }
+
+  .gold1 {
+    left: 1.5vw;
+    width: 3.4vw;
+    height: 5.5vh;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+  }
+
+  .white1 {
+    left: 1.9vw;
+    width: 2.5vw;
+    height: 4vh;
+    background: lightyellow;
+    box-shadow: 0px 0px 9px 4px lightyellow;
+  }
+
+  .blue1 {
+    left: 2.5vw;
+    width: 1.2vw;
+    height: 3vh;
+    background: darkblue;
+    box-shadow: 0px 0px 15px 10px darkblue;
+  }
+
+  .black1 {
+    left: 2vw;
+    width: 3vw;
+    height: 4vh;
+    bottom: -3.5vw;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+  }
+  .base {
+    border-radius: 50%;
+    position: absolute;
+  }
+  .flame-wrapper1 {
+    position: fixed;
+    animation: flicker 3ms ease-in infinite;
+    top: 55%;
+    right: 10.1%;
+  }
+}
+
+/* 미디어 쿼리: 1024px 이상 1280px 이하의 화면에서 스타일 조정 */
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .section {
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    min-height: 100vh;
+  }
+  .img {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    top: 8%;
+  }
+  .img1 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    bottom: 8%;
+  }
+  .img2 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    top: 8%;
+    left: 3%;
+  }
+  .img3 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    bottom: 8%;
+    right: 3%;
+  }
+  .img4 {
+    position: fixed;
+    width: 9%;
+    height: auto;
+    top: 7.3%;
+    right: 2.5%;
+  }
+  .img5 {
+    position: fixed;
+    width: 9%;
+    height: auto;
+    bottom: 7.3%;
+    left: 2.5%;
+  }
+  .img6 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    left: 3%;
+    top: 44%;
+  }
+  .img7 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    right: 3%;
+    top: 44%;
+  }
+  .long-line1 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    top: 14%;
+    left: 18%;
+  }
+  .long-line2 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    top: 14%;
+    right: 18%;
+  }
+  .long-line3 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    bottom: 14%;
+    right: 18%;
+  }
+  .long-line4 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    bottom: 14%;
+    left: 18%;
+  }
+  .short-line1 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 24%;
+    left: 6.9%;
+  }
+  .short-line2 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 62%;
+    left: 6.9%;
+  }
+  .short-line3 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 62%;
+    right: 6.9%;
+  }
+  .short-line4 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 24%;
+    right: 6.9%;
+  }
+  .card-container {
+    position: fixed;
+    top: 24%;
+    width: 68vw;
+    height: 52vh;
+  }
+  .card {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 41%;
+    z-index: 3;
+  }
+  .card1,
+  .card2 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card1 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card2 {
+    z-index: 3;
+    transform: rotateY(180deg);
+  }
+  .card_2 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 28%;
+    z-index: 2;
+    /* transform: rotate(-5deg); */
+  }
+  .card3,
+  .card4 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card3 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card4 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_3 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 28%;
+    z-index: 2;
+  }
+  .card5,
+  .card6 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card5 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card6 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_4 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 16%;
+    z-index: 1;
+    /* transform: rotate(-5deg); */
+  }
+  .card7,
+  .card8 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card7 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card8 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_5 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 16%;
+    z-index: 1;
+    /* transform: rotate(-5deg); */
+  }
+  .card9,
+  .card10 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card9 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card10 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  /* fire */
+  .red {
+    width: 6.2vw;
+    height: 10vh;
+    background: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+  }
+  .orange {
+    left: 1vw;
+    width: 4.3vw;
+    height: 7vh;
+    background: orange;
+    box-shadow: 0px 0px 12px 6px orange;
+  }
+
+  .gold {
+    left: 1.5vw;
+    width: 3.4vw;
+    height: 5.5vh;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+  }
+
+  .white {
+    left: 1.9vw;
+    width: 2.5vw;
+    height: 4vh;
+    background: lightyellow;
+    box-shadow: 0px 0px 9px 4px lightyellow;
+  }
+
+  .blue {
+    left: 2.5vw;
+    width: 1.2vw;
+    height: 3vh;
+    background: darkblue;
+    box-shadow: 0px 0px 15px 10px darkblue;
+  }
+
+  .black {
+    left: 2vw;
+    width: 3vw;
+    height: 4vh;
+    bottom: -3.5vw;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+  }
+  .base {
+    border-radius: 50%;
+    position: absolute;
+  }
+  .flame-wrapper {
+    position: fixed;
+    animation: flicker 3ms ease-in infinite;
+    top: 55%;
+    left: 3.8%;
+  }
+  .flame {
+    bottom: 0;
+    position: absolute;
+    border-radius: 50% 0% 50% 50%;
+    transform: rotate(-45deg);
+  }
+  .red1 {
+    width: 6.2vw;
+    height: 10vh;
+    background: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+  }
+  .orange1 {
+    left: 1vw;
+    width: 4.3vw;
+    height: 7vh;
+    background: orange;
+    box-shadow: 0px 0px 12px 6px orange;
+  }
+
+  .gold1 {
+    left: 1.5vw;
+    width: 3.4vw;
+    height: 5.5vh;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+  }
+
+  .white1 {
+    left: 1.9vw;
+    width: 2.5vw;
+    height: 4vh;
+    background: lightyellow;
+    box-shadow: 0px 0px 9px 4px lightyellow;
+  }
+
+  .blue1 {
+    left: 2.5vw;
+    width: 1.2vw;
+    height: 3vh;
+    background: darkblue;
+    box-shadow: 0px 0px 15px 10px darkblue;
+  }
+
+  .black1 {
+    left: 2vw;
+    width: 3vw;
+    height: 4vh;
+    bottom: -3.5vw;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+  }
+  .base {
+    border-radius: 50%;
+    position: absolute;
+  }
+  .flame-wrapper1 {
+    position: fixed;
+    animation: flicker 3ms ease-in infinite;
+    top: 55%;
+    right: 10.1%;
+  }
+}
+
+/* 미디어 쿼리: 1280px 이상 1600px 이하의 화면에서 스타일 조정 */
+@media screen and (min-width: 1280px) and (max-width: 1600px) {
+  .section {
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    min-height: 100vh;
+  }
+  .img {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    top: 8%;
+  }
+  .img1 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    bottom: 8%;
+  }
+  .img2 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    top: 8%;
+    left: 3%;
+  }
+  .img3 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    bottom: 8%;
+    right: 3%;
+  }
+  .img4 {
+    position: fixed;
+    width: 9%;
+    height: auto;
+    top: 7.3%;
+    right: 2.5%;
+  }
+  .img5 {
+    position: fixed;
+    width: 9%;
+    height: auto;
+    bottom: 7.3%;
+    left: 2.5%;
+  }
+  .img6 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    left: 3%;
+    top: 44%;
+  }
+  .img7 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    right: 3%;
+    top: 44%;
+  }
+  .long-line1 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    top: 14%;
+    left: 18%;
+  }
+  .long-line2 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    top: 14%;
+    right: 18%;
+  }
+  .long-line3 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    bottom: 14%;
+    right: 18%;
+  }
+  .long-line4 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    bottom: 14%;
+    left: 18%;
+  }
+  .short-line1 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 24%;
+    left: 6.9%;
+  }
+  .short-line2 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 62%;
+    left: 6.9%;
+  }
+  .short-line3 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 62%;
+    right: 6.9%;
+  }
+  .short-line4 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 24%;
+    right: 6.9%;
+  }
+  .card-container {
+    position: fixed;
+    top: 24%;
+    width: 68vw;
+    height: 52vh;
+  }
+  .card {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 41%;
+    z-index: 3;
+  }
+  .card1,
+  .card2 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card1 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card2 {
+    z-index: 3;
+    transform: rotateY(180deg);
+  }
+  .card_2 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 28%;
+    z-index: 2;
+    /* transform: rotate(-5deg); */
+  }
+  .card3,
+  .card4 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card3 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card4 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_3 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 28%;
+    z-index: 2;
+  }
+  .card5,
+  .card6 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card5 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card6 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_4 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 16%;
+    z-index: 1;
+    /* transform: rotate(-5deg); */
+  }
+  .card7,
+  .card8 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card7 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card8 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_5 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 16%;
+    z-index: 1;
+    /* transform: rotate(-5deg); */
+  }
+  .card9,
+  .card10 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card9 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card10 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  /* fire */
+  .red {
+    width: 5.7vw;
+    height: 10vh;
+    background: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+  }
+  .orange {
+    left: 1vw;
+    width: 4.3vw;
+    height: 7vh;
+    background: orange;
+    box-shadow: 0px 0px 12px 6px orange;
+  }
+
+  .gold {
+    left: 1.5vw;
+    width: 3.4vw;
+    height: 5.5vh;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+  }
+
+  .white {
+    left: 1.9vw;
+    width: 2.5vw;
+    height: 4vh;
+    background: lightyellow;
+    box-shadow: 0px 0px 9px 4px lightyellow;
+  }
+
+  .blue {
+    left: 2.5vw;
+    width: 1.2vw;
+    height: 3vh;
+    background: darkblue;
+    box-shadow: 0px 0px 15px 10px darkblue;
+  }
+
+  .black {
+    left: 2vw;
+    width: 3vw;
+    height: 4vh;
+    bottom: -3.5vw;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+  }
+  .base {
+    border-radius: 50%;
+    position: absolute;
+  }
+  .flame-wrapper {
+    position: fixed;
+    animation: flicker 3ms ease-in infinite;
+    top: 55%;
+    left: 3.8%;
+  }
+  .flame {
+    bottom: 0;
+    position: absolute;
+    border-radius: 50% 0% 50% 50%;
+    transform: rotate(-45deg);
+  }
+  .red1 {
+    width: 6.2vw;
+    height: 10vh;
+    background: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+  }
+  .orange1 {
+    left: 1vw;
+    width: 4.3vw;
+    height: 7vh;
+    background: orange;
+    box-shadow: 0px 0px 12px 6px orange;
+  }
+
+  .gold1 {
+    left: 1.5vw;
+    width: 3.4vw;
+    height: 5.5vh;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+  }
+
+  .white1 {
+    left: 1.9vw;
+    width: 2.5vw;
+    height: 4vh;
+    background: lightyellow;
+    box-shadow: 0px 0px 9px 4px lightyellow;
+  }
+
+  .blue1 {
+    left: 2.5vw;
+    width: 1.2vw;
+    height: 3vh;
+    background: darkblue;
+    box-shadow: 0px 0px 15px 10px darkblue;
+  }
+
+  .black1 {
+    left: 2vw;
+    width: 3vw;
+    height: 4vh;
+    bottom: -3.5vw;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+  }
+  .base {
+    border-radius: 50%;
+    position: absolute;
+  }
+  .flame-wrapper1 {
+    position: fixed;
+    animation: flicker 3ms ease-in infinite;
+    top: 55%;
+    right: 10.1%;
+  }
+}
+
+/* 미디어 쿼리: 1600px 이상의 화면에서 스타일 조정 */
+@media screen and (min-width: 1600px) {
+  .section {
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    min-height: 100vh;
+  }
+  .img {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    top: 8%;
+  }
+  .img1 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    bottom: 8%;
+  }
+  .img2 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    top: 8%;
+    left: 3%;
+  }
+  .img3 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    bottom: 8%;
+    right: 3%;
+  }
+  .img4 {
+    position: fixed;
+    width: 9%;
+    height: auto;
+    top: 7.3%;
+    right: 2.5%;
+  }
+  .img5 {
+    position: fixed;
+    width: 9%;
+    height: auto;
+    bottom: 7.3%;
+    left: 2.5%;
+  }
+  .img6 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    left: 3%;
+    top: 44%;
+  }
+  .img7 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    right: 3%;
+    top: 44%;
+  }
+  .long-line1 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    top: 14%;
+    left: 18%;
+  }
+  .long-line2 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    top: 14%;
+    right: 18%;
+  }
+  .long-line3 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    bottom: 14%;
+    right: 18%;
+  }
+  .long-line4 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    bottom: 14%;
+    left: 18%;
+  }
+  .short-line1 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 24%;
+    left: 6.9%;
+  }
+  .short-line2 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 62%;
+    left: 6.9%;
+  }
+  .short-line3 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 62%;
+    right: 6.9%;
+  }
+  .short-line4 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 24%;
+    right: 6.9%;
+  }
+  .card-container {
+    position: fixed;
+    top: 24%;
+    width: 68vw;
+    height: 52vh;
+  }
+  .card {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 41%;
+    z-index: 3;
+  }
+  .card1,
+  .card2 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card1 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card2 {
+    z-index: 3;
+    transform: rotateY(180deg);
+  }
+  .card_2 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 28%;
+    z-index: 2;
+    /* transform: rotate(-5deg); */
+  }
+  .card3,
+  .card4 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card3 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card4 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_3 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 28%;
+    z-index: 2;
+  }
+  .card5,
+  .card6 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card5 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card6 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_4 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 16%;
+    z-index: 1;
+    /* transform: rotate(-5deg); */
+  }
+  .card7,
+  .card8 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card7 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card8 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_5 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 16%;
+    z-index: 1;
+    /* transform: rotate(-5deg); */
+  }
+  .card9,
+  .card10 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card9 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card10 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  /* fire */
+  .red {
+    width: 6.2vw;
+    height: 10vh;
+    background: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+  }
+  .orange {
+    left: 1vw;
+    width: 4.3vw;
+    height: 7vh;
+    background: orange;
+    box-shadow: 0px 0px 12px 6px orange;
+  }
+
+  .gold {
+    left: 1.5vw;
+    width: 3.4vw;
+    height: 5.5vh;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+  }
+
+  .white {
+    left: 1.9vw;
+    width: 2.5vw;
+    height: 4vh;
+    background: lightyellow;
+    box-shadow: 0px 0px 9px 4px lightyellow;
+  }
+
+  .blue {
+    left: 2.5vw;
+    width: 1.2vw;
+    height: 3vh;
+    background: darkblue;
+    box-shadow: 0px 0px 15px 10px darkblue;
+  }
+
+  .black {
+    left: 2vw;
+    width: 3vw;
+    height: 4vh;
+    bottom: -3.5vw;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+  }
+  .base {
+    border-radius: 50%;
+    position: absolute;
+  }
+  .flame-wrapper {
+    position: fixed;
+    animation: flicker 3ms ease-in infinite;
+    top: 55%;
+    left: 3.8%;
+  }
+  .flame {
+    bottom: 0;
+    position: absolute;
+    border-radius: 50% 0% 50% 50%;
+    transform: rotate(-45deg);
+  }
+  .red1 {
+    width: 5.6vw;
+    height: 10vh;
+    background: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+  }
+  .orange1 {
+    left: 0.6vw;
+    width: 4.3vw;
+    height: 7vh;
+    background: orange;
+    box-shadow: 0px 0px 12px 6px orange;
+  }
+
+  .gold1 {
+    left: 1.2vw;
+    width: 3.4vw;
+    height: 5.5vh;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+  }
+
+  .white1 {
+    left: 1.7vw;
+    width: 2.5vw;
+    height: 4vh;
+    background: lightyellow;
+    box-shadow: 0px 0px 9px 4px lightyellow;
+  }
+
+  .blue1 {
+    left: 2.5vw;
+    width: 1.2vw;
+    height: 3vh;
+    background: darkblue;
+    box-shadow: 0px 0px 15px 10px darkblue;
+  }
+
+  .black1 {
+    left: 2vw;
+    width: 3vw;
+    height: 4vh;
+    bottom: -3.5vw;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+  }
+  .base {
+    border-radius: 50%;
+    position: absolute;
+  }
+  .flame-wrapper1 {
+    position: fixed;
+    animation: flicker 3ms ease-in infinite;
+    top: 55%;
+    right: 9.7%;
+  }
+}
+/* 미디어 쿼리: 768px 이하의 화면(태블릿 및 모바일)에서 스타일 조정 */
+@media (max-width: 768px) {
+  .section {
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    min-height: 100vh;
+  }
+  .img {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    top: 8%;
+  }
+  .img1 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    bottom: 8%;
+  }
+  .img2 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    top: 8%;
+    left: 3%;
+  }
+  .img3 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    bottom: 8%;
+    right: 3%;
+  }
+  .img4 {
+    position: fixed;
+    width: 9%;
+    height: auto;
+    top: 7.3%;
+    right: 2.5%;
+  }
+  .img5 {
+    position: fixed;
+    width: 9%;
+    height: auto;
+    bottom: 7.3%;
+    left: 2.5%;
+  }
+  .img6 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    left: 3%;
+    top: 44%;
+  }
+  .img7 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    right: 3%;
+    top: 44%;
+  }
+  .long-line1 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    top: 14%;
+    left: 18%;
+  }
+  .long-line2 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    top: 14%;
+    right: 18%;
+  }
+  .long-line3 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    bottom: 14%;
+    right: 18%;
+  }
+  .long-line4 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    bottom: 14%;
+    left: 18%;
+  }
+  .short-line1 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 24%;
+    left: 6.9%;
+  }
+  .short-line2 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 62%;
+    left: 6.9%;
+  }
+  .short-line3 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 62%;
+    right: 6.9%;
+  }
+  .short-line4 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 24%;
+    right: 6.9%;
+  }
+  .card-container {
+    position: fixed;
+    top: 24%;
+    width: 68vw;
+    height: 52vh;
+  }
+  .card {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 41%;
+    z-index: 3;
+  }
+  .card1,
+  .card2 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card1 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card2 {
+    z-index: 3;
+    transform: rotateY(180deg);
+  }
+  .card_2 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 28%;
+    z-index: 2;
+    /* transform: rotate(-5deg); */
+  }
+  .card3,
+  .card4 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card3 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card4 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_3 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 28%;
+    z-index: 2;
+  }
+  .card5,
+  .card6 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card5 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card6 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_4 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 16%;
+    z-index: 1;
+    /* transform: rotate(-5deg); */
+  }
+  .card7,
+  .card8 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card7 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card8 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_5 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 16%;
+    z-index: 1;
+    /* transform: rotate(-5deg); */
+  }
+  .card9,
+  .card10 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card9 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card10 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  /* fire */
+  .red {
+    width: 6.2vw;
+    height: 10vh;
+    background: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+  }
+  .orange {
+    left: 1vw;
+    width: 4.3vw;
+    height: 7vh;
+    background: orange;
+    box-shadow: 0px 0px 12px 6px orange;
+  }
+
+  .gold {
+    left: 1.5vw;
+    width: 3.4vw;
+    height: 5.5vh;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+  }
+
+  .white {
+    left: 1.9vw;
+    width: 2.5vw;
+    height: 4vh;
+    background: lightyellow;
+    box-shadow: 0px 0px 9px 4px lightyellow;
+  }
+
+  .blue {
+    left: 2.5vw;
+    width: 1.2vw;
+    height: 3vh;
+    background: darkblue;
+    box-shadow: 0px 0px 15px 10px darkblue;
+  }
+
+  .black {
+    left: 2vw;
+    width: 3vw;
+    height: 4vh;
+    bottom: -3.5vw;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+  }
+  .base {
+    border-radius: 50%;
+    position: absolute;
+  }
+  .flame-wrapper {
+    position: fixed;
+    animation: flicker 3ms ease-in infinite;
+    top: 55%;
+    left: 3.8%;
+  }
+  .flame {
+    bottom: 0;
+    position: absolute;
+    border-radius: 50% 0% 50% 50%;
+    transform: rotate(-45deg);
+  }
+  .red1 {
+    width: 6.2vw;
+    height: 10vh;
+    background: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+  }
+  .orange1 {
+    left: 1vw;
+    width: 4.3vw;
+    height: 7vh;
+    background: orange;
+    box-shadow: 0px 0px 12px 6px orange;
+  }
+
+  .gold1 {
+    left: 1.5vw;
+    width: 3.4vw;
+    height: 5.5vh;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+  }
+
+  .white1 {
+    left: 1.9vw;
+    width: 2.5vw;
+    height: 4vh;
+    background: lightyellow;
+    box-shadow: 0px 0px 9px 4px lightyellow;
+  }
+
+  .blue1 {
+    left: 2.5vw;
+    width: 1.2vw;
+    height: 3vh;
+    background: darkblue;
+    box-shadow: 0px 0px 15px 10px darkblue;
+  }
+
+  .black1 {
+    left: 2vw;
+    width: 3vw;
+    height: 4vh;
+    bottom: -3.5vw;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+  }
+  .base {
+    border-radius: 50%;
+    position: absolute;
+  }
+  .flame-wrapper1 {
+    position: fixed;
+    animation: flicker 3ms ease-in infinite;
+    top: 55%;
+    right: 10.1%;
+  }
+}
+
+/* 미디어 쿼리: 1024px 이하의 화면(작은 데스크탑)에서 스타일 조정 */
+@media (max-width: 1024px) {
+  .section {
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    min-height: 100vh;
+  }
+  .img {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    top: 8%;
+  }
+  .img1 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    bottom: 8%;
+  }
+  .img2 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    top: 8%;
+    left: 3%;
+  }
+  .img3 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    bottom: 8%;
+    right: 3%;
+  }
+  .img4 {
+    position: fixed;
+    width: 9%;
+    height: auto;
+    top: 7.3%;
+    right: 2.5%;
+  }
+  .img5 {
+    position: fixed;
+    width: 9%;
+    height: auto;
+    bottom: 7.3%;
+    left: 2.5%;
+  }
+  .img6 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    left: 3%;
+    top: 44%;
+  }
+  .img7 {
+    position: fixed;
+    width: 8%;
+    height: auto;
+    right: 3%;
+    top: 44%;
+  }
+  .long-line1 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    top: 14%;
+    left: 18%;
+  }
+  .long-line2 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    top: 14%;
+    right: 18%;
+  }
+  .long-line3 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    bottom: 14%;
+    right: 18%;
+  }
+  .long-line4 {
+    position: fixed;
+    width: 20%;
+    border: 1px color= silver;
+    bottom: 14%;
+    left: 18%;
+  }
+  .short-line1 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 24%;
+    left: 6.9%;
+  }
+  .short-line2 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 62%;
+    left: 6.9%;
+  }
+  .short-line3 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 62%;
+    right: 6.9%;
+  }
+  .short-line4 {
+    position: fixed;
+    height: 15%;
+    border: 1px color= silver;
+    top: 24%;
+    right: 6.9%;
+  }
+  .card-container {
+    position: fixed;
+    top: 24%;
+    width: 68vw;
+    height: 52vh;
+  }
+  .card {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 41%;
+    z-index: 3;
+  }
+  .card1,
+  .card2 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card1 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card2 {
+    z-index: 3;
+    transform: rotateY(180deg);
+  }
+  .card_2 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 28%;
+    z-index: 2;
+    /* transform: rotate(-5deg); */
+  }
+  .card3,
+  .card4 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card3 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card4 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_3 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 28%;
+    z-index: 2;
+  }
+  .card5,
+  .card6 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card5 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card6 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_4 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 16%;
+    z-index: 1;
+    /* transform: rotate(-5deg); */
+  }
+  .card7,
+  .card8 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card7 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card8 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  .card_5 {
+    width: 18vw;
+    height: 52vh;
+    position: fixed;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 16%;
+    z-index: 1;
+    /* transform: rotate(-5deg); */
+  }
+  .card9,
+  .card10 {
+    position: fixed;
+    width: 18vw;
+    height: 52vh;
+    backface-visibility: hidden;
+  }
+  .card9 {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  .card10 {
+    z-index: 1;
+    transform: rotateY(180deg);
+  }
+  /* fire */
+  .red {
+    width: 6.2vw;
+    height: 10vh;
+    background: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+  }
+  .orange {
+    left: 1vw;
+    width: 4.3vw;
+    height: 7vh;
+    background: orange;
+    box-shadow: 0px 0px 12px 6px orange;
+  }
+
+  .gold {
+    left: 1.5vw;
+    width: 3.4vw;
+    height: 5.5vh;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+  }
+
+  .white {
+    left: 1.9vw;
+    width: 2.5vw;
+    height: 4vh;
+    background: lightyellow;
+    box-shadow: 0px 0px 9px 4px lightyellow;
+  }
+
+  .blue {
+    left: 2.5vw;
+    width: 1.2vw;
+    height: 3vh;
+    background: darkblue;
+    box-shadow: 0px 0px 15px 10px darkblue;
+  }
+
+  .black {
+    left: 2vw;
+    width: 3vw;
+    height: 4vh;
+    bottom: -3.5vw;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+  }
+  .base {
+    border-radius: 50%;
+    position: absolute;
+  }
+  .flame-wrapper {
+    position: fixed;
+    animation: flicker 3ms ease-in infinite;
+    top: 55%;
+    left: 3.8%;
+  }
+  .flame {
+    bottom: 0;
+    position: absolute;
+    border-radius: 50% 0% 50% 50%;
+    transform: rotate(-45deg);
+  }
+  .red1 {
+    width: 6.2vw;
+    height: 10vh;
+    background: orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+  }
+  .orange1 {
+    left: 1vw;
+    width: 4.3vw;
+    height: 7vh;
+    background: orange;
+    box-shadow: 0px 0px 12px 6px orange;
+  }
+
+  .gold1 {
+    left: 1.5vw;
+    width: 3.4vw;
+    height: 5.5vh;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+  }
+
+  .white1 {
+    left: 1.9vw;
+    width: 2.5vw;
+    height: 4vh;
+    background: lightyellow;
+    box-shadow: 0px 0px 9px 4px lightyellow;
+  }
+
+  .blue1 {
+    left: 2.5vw;
+    width: 1.2vw;
+    height: 3vh;
+    background: darkblue;
+    box-shadow: 0px 0px 15px 10px darkblue;
+  }
+
+  .black1 {
+    left: 2vw;
+    width: 3vw;
+    height: 4vh;
+    bottom: -3.5vw;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+  }
+  .base {
+    border-radius: 50%;
+    position: absolute;
+  }
+  .flame-wrapper1 {
+    position: fixed;
+    animation: flicker 3ms ease-in infinite;
+    top: 55%;
+    right: 10.1%;
+  }
+}
